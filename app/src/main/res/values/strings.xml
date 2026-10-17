@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">createTheSOS</string>
+
+    <string name="name_preference_share_fich">shared_fich</string> <!--Esto debemos escribirlo a mano-->
+
     <string name="configura_el_numero_de_telefono">Configura el numero de telefono</string>
     <string name="a_adir">Añadir</string>
     <string name="version_1_0">Version 1.0</string>
     <string name="configura_el_numero_de_sos">Configura el numero de SOS</string>
+
+    <string name="lamar_sos">Llamar al SOS</string>
+
+    <!--Esto debemos escribirlo a mano-->
+    <string name="mensaje_tostador_phone"> Debes de hacer algo…</string>
+    <string name="phone_string">phone</string>
+    <string name="numero">numero</string>
 </resources>
