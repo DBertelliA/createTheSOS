@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">createTheSOS</string>
+    <string name="configura_el_numero_de_telefono">Configura el numero de telefono</string>
+    <string name="a_adir">Añadir</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="configura_el_numero_de_sos">Configura el numero de SOS</string>
+</resources>
