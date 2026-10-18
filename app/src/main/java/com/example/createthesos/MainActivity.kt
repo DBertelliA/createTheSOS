@@ -55,12 +55,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         mainContainer.changePhone.setOnClickListener {
-            var nameShareFich = getString(R.string.name_preference_share_fich)
-            var namePhoneSH = getString(R.string.phone_string)
-
-            var mod = getSharedPreferences(nameShareFich, Context.MODE_PRIVATE)
-            mod.edit().remove(namePhoneSH).apply()
-
+//            var nameShareFich = getString(R.string.name_preference_share_fich)
+//            var namePhoneSH = getString(R.string.phone_string)
+//
+//            var mod = getSharedPreferences(nameShareFich, Context.MODE_PRIVATE)
+//            mod.edit().remove(namePhoneSH).apply()
+            //esto de arriba no deberia estar aqui
             val intent = Intent(this, ConfigAct::class.java).apply {
                 addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 putExtra("back", true) //Volvemos al activity anterior con el valor este a true

@@ -54,6 +54,12 @@ class ConfigAct : AppCompatActivity(){
         sharedPhone?.let{
             //Un metodo para iniciar la actividad que actua como return
             startMainAct(it)
+        }.run{
+            var nameShareFich = getString(R.string.name_preference_share_fich)
+            var namePhoneSH = getString(R.string.phone_string)
+
+            var mod = getSharedPreferences(nameShareFich, Context.MODE_PRIVATE)
+            mod.edit().remove(namePhoneSH).apply()
         }
 
         confB.button.setOnClickListener {
