@@ -54,12 +54,6 @@ class ConfigAct : AppCompatActivity(){
         sharedPhone?.let{
             //Un metodo para iniciar la actividad que actua como return
             startMainAct(it)
-        }.run{
-            var nameShareFich = getString(R.string.name_preference_share_fich)
-            var namePhoneSH = getString(R.string.phone_string)
-
-            var mod = getSharedPreferences(nameShareFich, Context.MODE_PRIVATE)
-            mod.edit().remove(namePhoneSH).apply()
         }
 
         confB.button.setOnClickListener {
@@ -95,6 +89,11 @@ class ConfigAct : AppCompatActivity(){
 
         if (retenedor){
             confB.editPhoneText.setText("")
+            var nameShareFich = getString(R.string.name_preference_share_fich)
+            var namePhoneSH = getString(R.string.phone_string)
+
+            var mod = getSharedPreferences(nameShareFich, Context.MODE_PRIVATE)
+            mod.edit().remove(namePhoneSH).apply()
             Toast.makeText(this, R.string.mensaje_tostador_phone, Toast.LENGTH_LONG).show() //mensajes que creas tu en el string para ser llamados por el tostador dependiendo de lo que necesites
 
             intent.removeExtra("back") //Elimina el true del retenedor
